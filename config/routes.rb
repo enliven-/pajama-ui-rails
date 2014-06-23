@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  root 'application#home'
+
+  get '/home'           => 'application#home'
+  get '/results'        => 'application#results'
+  get '/show'           => 'application#show'
+  get '/form'           => 'application#form'
+  post '/file-upload'   => 'application#file_upload'
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
